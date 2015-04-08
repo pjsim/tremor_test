@@ -1,1 +1,4 @@
 ncurses for view?
+
+potentially use Marshal to save instead of JSON?
+another option is YAML but marshaling would be fastest
