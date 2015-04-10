@@ -1,0 +1,15 @@
+Shorterm
+- editing tasks and update updated_at on edit
+- add subtasks to task
+- tests
+- add command by 'LIST TASK' instead of 'add LIST TASK'
+- show full individual task details
+- give commands shorter names eg. ls, rm etc
+- put all json files in a seperate folder to code
+- add priorities to tasks
+
+Longterm
+- ncurses for view
+- custom lists rather than predefined
+
+

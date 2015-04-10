@@ -4,9 +4,8 @@ require_relative 'task'
 require_relative 'actions'
 
 class MyCli < Thor
-  # desc add LIST TASK, add TASK send it to default backlog list
   # ANOTHER SHORTCUT -> No add.. just list name, therefore do TASK, dn TASK etc
-  desc "add TASK", "add a TASK"
+  desc "add LIST TASK", "add a TASK to LIST"
   def add list, info
     add_task list, info
   end
