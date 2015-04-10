@@ -2,3 +2,22 @@ ncurses for view?
 
 potentially use Marshal to save instead of JSON?
 another option is YAML but marshaling would be fastest
+
+
+    movie.each { |name, value| puts "#{name} => #{value}"}
+
+
+    def index_for( word )
+      words.find_index { |this_word| word == this_word }
+      end
+
+
+      def average_word_length
+        total = words.inject(0.0){ |result, word| word.size + result}
+          total / word_count
+          end
+
+
+          check out Array and Hash API for Ruby
+
+future --> make custom json tables rather than predefined ones

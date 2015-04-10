@@ -1,14 +1,11 @@
 class Task
   attr_reader :id, :info, :created_at, :updated_at
-  @@id_count = 1
 
-  def initialize(list, info)
-    @id = "#{list}#{'%02i' % @@id_count}"
+  def initialize(list, info, task_id)
+    @id = task_id
     @info = info
     @created_at = Time.now.to_s
     @updated_at = Time.now.to_s
-
-    @@id_count += 1
   end
 
   def info=(info)
@@ -20,7 +17,7 @@ end
 class Maintask < Task
   attr_reader :subtasks
 
-  def initialize(list, info)
+  def initialize(list, info, task_id)
     super
     @subtasks = []
   end
